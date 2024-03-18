@@ -7,6 +7,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --color_text-primary :#309c13;
+    --color_text-secondary :#101E2C;
+    --color_text-tertiary :#ffffff;
+    --main_color-primary :#000000;
+    --main_color-secondary :#5a5a5a;
+    --main_color_tertiary: #ffffff;
+    background-color: #FAFBEF;
+    --lowText_font_size:19px;
+    --text-size-title: 40px;
+    --text-tittle_card:24px;
+    --text-tittle_cardv2:20px;
+    --text_paragraph: 16px;
+    --box_shadow_primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
 header{
     width: 100%;
     height: 100px;
@@ -54,29 +70,31 @@ header{
 }
 
 .menu nav ul li a{
-    color: black;
-    font-size: 16px;
+    color: var(--color_text-secondary);
+    font-size: var(--lowText_font_size);
     position: relative;
 }
 
 .menu nav ul li a:hover{
-    color: #8c228c;
+    color: var(--color_text-primary);
 }
 
 .btn_quote{
-    display: flex;
+    display: block;
     padding: 8px 40px;
-    border: 2px solid #2c0a46;
+    border: 2px solid #000000;
     border-radius: 8px;
     font-weight: 500;
-    color: #9F33E1 ;
+    color: rgb(255, 255, 255) ;
     margin: 0px 20px;
     transition: all 300ms;
+    background: #000000;
 }
 
 .btn_quote:hover{
     color: rgb(0, 0, 0);
-    background: beige;
+    background: rgb(255, 255, 255);
+   
 }
 
 .menu .SocialMedia{
@@ -86,3 +104,65 @@ header{
 .menu .SocialMedia a{
     margin: 0px 4px;
 }
+
+.menu .SocialMedia img{
+    width: 20px;
+}
+
+.conteiner__cover{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--main_color-secondary);
+}
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.text__cover{
+    width: 100%;
+    padding-right: 70px;
+}
+
+.text__cover h1{
+    font-size: 50px;
+    color: var(--text_paragraph);
+}
+.text__cover p{
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+.btn__text{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main_color-primary);
+    color: white;
+    border-radius: 8px;
+    border: 2px transparent;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.btn__text:hover{
+    background: var(--main_color_tertiary);
+    border: 2px solid var(--main_color-primary);
+    color: var(--color_text-secondary);
+}
+
+.image__cover{
+    width: 100%;
+}
+
+.image__cover img{
+    width: 720px;
+}
+
